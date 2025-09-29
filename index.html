@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<script src="https://kit.fontawesome.com/94c5fb13bd.js" crossorigin="anonymous"></script>
+<body class="container">
+    <header class="header">
+        <div class="header_left">
+            <button class="ham-button"><i class='bx bx-menu'></i></button>
+           <a href="index.html"><img src="youtube-logo.png" alt="YouTube Logo" class="header_logo"></a>
+        </div>
+        <button class="mobile-search-btn"><i class='bx bx-search'></i></button>
+        <div class="search">
+            <div class="header_search">
+                <input type="text" class="header_search-input" placeholder="Search">
+                <button class="header_search-button">
+                    <i class='bx bx-search' ></i>
+                </button>
+            </div>
+            <button class="voice-button"><i class='bx bx-microphone' ></i></button>
+        </div>
+        <div class="header_right">
+            <div class="profile-container">
+                <button class="profile-button">
+                    <i class='bx bx-plus' id="plus"><span class="video">Create</span></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#"><i class='bx bx-movie-play'></i>Upload Video</a>
+                    <a href="#"><i class='bx bx-station'></i>Go live</a>
+                    <a href="#"><i class='bx bx-edit'></i>Create post</a>
+                </div>
+            </div>
+            <div class="profile-container">
+                <span class="notif">
+                <button class="profile-buttons">
+                    <i class='bx bx-bell' ></i>
+                </button>
+                </span>
+                <div class="dropdown-menus">
+                    <a href="#">Your Channel</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </div>
+            <div class="profile-container">
+                <button class="profile-button">
+                    <img src="placeholder.jpg" alt="Profile" class="profile-avatar">
+                </button>
+                <div class="dropdown-menuo">
+                    <a href="#">Your Channel</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="category-bar">
+        <button id="activec">All</button>
+        <button>Game</button>
+        <button>Music</button>
+        <button>Mix</button>
+        <button>Comedy</button>
+        <button>News</button>
+        <button>Live</button>
+        <button>Recently uploaded</button>
+        <button>Views</button>
+        <button>New to you</button>
+    </div>
+
+
+    <aside class="yt-menu">
+        <a href=""><button class="yt-menu-button main-menu" id="active"><i class='bx bx-home-alt-2'></i><span>Home</span></button></a>
+        <a href=""><button class="yt-menu-button main-menu"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M15.88672,1c-0.91259,0 -1.80903,0.22864 -2.59961,0.65625l-7.7207,4.06445v-0.00195c-1.80265,0.94645 -2.92969,2.81353 -2.92969,4.84766c0,1.3451 0.58584,2.51599 1.41016,3.48047c-0.83077,0.97472 -1.41016,2.14901 -1.41016,3.47461c0,3.01119 2.4651,5.47852 5.47656,5.47852c0.91711,0 1.81548,-0.2269 2.60352,-0.6582l7.57617,-3.98828l-0.0332,0.01563c1.89194,-0.90916 3.10352,-2.83724 3.10352,-4.93555c0,-1.3451 -0.58584,-2.51599 -1.41016,-3.48047c0.83077,-0.97473 1.41016,-2.14901 1.41016,-3.47461c0,-3.01119 -2.4651,-5.47852 -5.47656,-5.47852zM15.88672,3c1.92654,0 3.47656,1.55171 3.47656,3.47852c0,1.07146 -0.47433,2.04371 -1.2832,2.69922l-0.95898,0.77734l0.95898,0.77734c0.79153,0.64098 1.2832,1.61207 1.2832,2.70117c0,1.3217 -0.77864,2.55997 -1.9707,3.13281l-0.01562,0.00781l-7.61328,4.00977l-0.00586,0.00391c-0.47996,0.26271 -1.06164,0.41211 -1.64453,0.41211c-1.92654,0 -3.47656,-1.5517 -3.47656,-3.47852c0,-1.07146 0.47433,-2.04371 1.2832,-2.69922l0.95898,-0.77734l-0.95898,-0.77734c-0.79153,-0.64098 -1.2832,-1.61207 -1.2832,-2.70117c0,-1.29987 0.70603,-2.47062 1.85938,-3.07617h0.00195l7.73438,-4.07227l0.00586,-0.00391c0.49097,-0.2658 1.07167,-0.41406 1.64844,-0.41406zM10,9v6l5,-3z"></path></g></g>
+</svg></i></i><span>Shorts</span></button></a>
+        <a href=""><button class="yt-menu-button main-menu"><i class='bx bx-movie-play'></i><span>Subscriptions</span></button></a>
+        <a href=""><button class="yt-menu-button main-menu"><i class='bx bx-user'></i><span>You</span></button></a>
+        <a href=""><button class="yt-menu-button main-menu"><i class='bx bxs-download'></i><span>Download</span></button></a>
+        <!-- Menu lain -->
+        <div class="other-menu">
+            <hr>
+            <a href=""><button class="yt-menu-button"><pre>You </pre><span class="arrow"><i class='bx bx-chevron-right'></i></span></button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-history' ></i>History</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bxs-playlist' ></i>Playlist</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-video'></i>Your videos</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-time-five'></i>Watch later</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-like'></i>Liked videos</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-cut' ></i>Your clips</button></a>
+            <hr>
+            <a href=""><button class="yt-menu-button"><pre>Subscriptions </pre><span class="arrow"><i class='bx bx-chevron-right'></i></span></button></a>
+            <a href=""><button class="yt-menu-button"><img src="xx.png" class="profile-avatar" alt=""><pre> Learning Axis</pre></button></a>
+            <hr>
+            <a href=""><button class="yt-menu-button"><pre>Explore </pre><span class="arrow"><i class='bx bx-chevron-right'></i></span></button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-music' ></i>Music</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-film' ></i>Movies</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bxs-joystick'></i>Gaming</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-news' ></i>News</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-trophy' ></i>Sport</button></a>
+            <hr>
+            <a href=""><button class="yt-menu-button"><pre>More from YouTube </pre><span class="arrow"><i class='bx bx-chevron-right'></i></span></button></a>
+            <a href=""><button class="yt-menu-button">YouTube Premium</button></a>
+            <a href=""><button class="yt-menu-button">YouTube Music</button></a>
+            <a href=""><button class="yt-menu-button">YouTube Kids</button></a>
+            <a href=""><button class="yt-menu-button">YouTube TV</button></a>
+            <hr>
+            <a href="set.html"><button class="yt-menu-button"> <i class='bx bx-cog'></i>Settings</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bxs-flag-alt' ></i>Report history</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-question-mark' ></i>Help</button></a>
+            <a href=""><button class="yt-menu-button"><i class='bx bx-message-error' ></i>Send feedback</button></a>
+        </div>
+        </div>
+    </aside>
+
+        <main class="main">
+            <a href="video.html">
+                <div class="video-thumb">
+                    <div class="thumb-img" id="a1">
+                        <div class="timestamp">2:39</div>
+                    </div>
+                    
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <img src="xx.png" alt="">
+                            <div class="vid-desc">
+                                <h3 class="title">Apa itu CSS? | Jenis-jenis CSS | Tutorial CSS...</h3>
+
+                                <div class="desc">
+                                    <p>Learning Axis</p>
+                                    <p>2,6K Views <i class="big">·</i> 2 Months Ago</p>
+                                </div>
+                            </a>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            <a href="videog.html">
+                <div class="video-thumb">
+                    <div class="thumb-img" id="a2">
+                        <div class="timestamp">2:39</div>
+                    </div>
+                    
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <img src="unnamed.jpg" alt="">
+                            <div class="vid-desc">
+                                <h3 class="title">Unboxing + tes fitur baru iPhone 17 & iPhone 17 Pro!</h3>
+
+                                <div class="desc">
+                                    <p>GadgetIn</p>
+                                    <p>1.9M Views <i class="big">·</i> 3 Days Ago</p>
+                                </div>
+                            </a>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+          
+            <a href="video1.html">
+                <div class="video-thumb">
+                    <div class="thumb-img" id="a3">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <img src="placeholder.jpg" alt="">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 Views <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="video1.html">
+                <div class="video-thumb">
+                    <div class="thumb-img" id="a3">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <img src="placeholder.jpg" alt="">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 Views <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="video1.html">
+                <div class="video-thumb">
+                    <div class="thumb-img" id="a3">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <img src="placeholder.jpg" alt="">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 Views <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="video1.html">
+                <div class="video-thumb">
+                    <div class="thumb-img" id="a3">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <img src="placeholder.jpg" alt="">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 Views <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+           
+                <div>
+                   
+                </div>
+                <div class="sht">
+            </a>
+            <a href="">
+                <div class="shorts">
+                        <img src="placeholder.jpg" alt="">
+                        <h4>affan</h4>
+                        <p>123 views</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="shorts">
+                        <img src="placeholder.jpg" alt="">
+                        <h4>affan</h4>
+                        <p>123 views</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="shorts">
+                        <img src="placeholder.jpg" alt="">
+                        <h4>affan</h4>
+                        <p>123 views</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="shorts">
+                        <img src="placeholder.jpg" alt="">
+                        <h4>affan</h4>
+                        <p>123 views</p>
+                </div>
+            </a>
+            </div>
+            
+
+
+
+            <!-- Repeat other video thumbs similarly -->
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

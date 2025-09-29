@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video.css">
+    
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<script src="https://kit.fontawesome.com/94c5fb13bd.js" crossorigin="anonymous"></script>
+<body class="container">
+    <header class="header">
+        <div class="header_left">
+           <i class='bx bx-menu' id="hamburger"></i>
+           <a href="index.html"><img src="youtube-logo.png" alt="YouTube Logo" class="header_logo"></a>
+        </div>
+        <div class="search">
+            <div class="header_search">
+                <input type="text" class="header_search-input" placeholder="Search">
+                <button class="header_search-button">
+                    <i class='bx bx-search' ></i>
+                </button>
+            </div>
+            <button class="voice-button"><i class='bx bx-microphone' ></i></button>
+        </div>
+        <div class="header_right">
+            <div class="profile-container">
+                <button class="profile-button">
+                    <i class='bx bx-plus' id="plus"><span class="video">upload</span></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#">Your Channel</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </div>
+            <div class="profile-container">
+                <span class="notif">
+                <button class="profile-buttons">
+                    <i class='bx bx-bell' ></i>
+                </button>
+                </span>
+                <div class="dropdown-menus">
+                    <a href="#">Your Channel</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </div>
+            <div class="profile-container">
+                <button class="profile-button">
+                    <img src="placeholder.jpg" alt="Profile" class="profile-avatar">
+                </button>
+                <div class="dropdown-menuo">
+                    <a href="#">Your Channel</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <aside class="yt-menu">
+        <a href=""><button class="yt-menu-button"><i class='bx bx-home-alt-2'></i>Home</button></a>
+        <a href=""><button class="yt-menu-button"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M15.88672,1c-0.91259,0 -1.80903,0.22864 -2.59961,0.65625l-7.7207,4.06445v-0.00195c-1.80265,0.94645 -2.92969,2.81353 -2.92969,4.84766c0,1.3451 0.58584,2.51599 1.41016,3.48047c-0.83077,0.97472 -1.41016,2.14901 -1.41016,3.47461c0,3.01119 2.4651,5.47852 5.47656,5.47852c0.91711,0 1.81548,-0.2269 2.60352,-0.6582l7.57617,-3.98828l-0.0332,0.01563c1.89194,-0.90916 3.10352,-2.83724 3.10352,-4.93555c0,-1.3451 -0.58584,-2.51599 -1.41016,-3.48047c0.83077,-0.97473 1.41016,-2.14901 1.41016,-3.47461c0,-3.01119 -2.4651,-5.47852 -5.47656,-5.47852zM15.88672,3c1.92654,0 3.47656,1.55171 3.47656,3.47852c0,1.07146 -0.47433,2.04371 -1.2832,2.69922l-0.95898,0.77734l0.95898,0.77734c0.79153,0.64098 1.2832,1.61207 1.2832,2.70117c0,1.3217 -0.77864,2.55997 -1.9707,3.13281l-0.01562,0.00781l-7.61328,4.00977l-0.00586,0.00391c-0.47996,0.26271 -1.06164,0.41211 -1.64453,0.41211c-1.92654,0 -3.47656,-1.5517 -3.47656,-3.47852c0,-1.07146 0.47433,-2.04371 1.2832,-2.69922l0.95898,-0.77734l-0.95898,-0.77734c-0.79153,-0.64098 -1.2832,-1.61207 -1.2832,-2.70117c0,-1.29987 0.70603,-2.47062 1.85938,-3.07617h0.00195l7.73438,-4.07227l0.00586,-0.00391c0.49097,-0.2658 1.07167,-0.41406 1.64844,-0.41406zM10,9v6l5,-3z"></path></g></g>
+</svg></i>shorts</button></a>
+        <button class="yt-menu-button">Game</button>
+        <button class="yt-menu-button">Music</button>
+        <hr>
+        <button class="yt-menu-button"><pre>Subscriptions </pre><span class="arrow"><i class='bx bx-chevron-right'></i></span></button>
+        <button class="yt-menu-button">Library</button>
+        <button class="yt-menu-button">History</button>
+        <button class="yt-menu-button">Your videos</button>
+        <button class="yt-menu-button">Watch later</button>
+        <button class="yt-menu-button">Liked videos</button>
+        <hr>
+        <button class="yt-menu-button"><pre>Explore </pre><span class="arrow"><i class='bx bx-chevron-right'></i></span></button>
+        <button class="yt-menu-button">Trending</button>
+        <button class="yt-menu-button">Shopping</button>
+        <button class="yt-menu-button">Music</button>
+        <button class="yt-menu-button">Films</button>
+        <button class="yt-menu-button">Live</button>
+        <button class="yt-menu-button">Gaming</button>
+        <button class="yt-menu-button">News</button>
+        <button class="yt-menu-button">Sport</button>
+        <button class="yt-menu-button">Courses</button>
+        <button class="yt-menu-button">Fashion & beauty</button>
+        <button class="yt-menu-button">Podcasts</button>
+        <hr>
+        <button class="yt-menu-button"><pre>More from YouTube </pre><span class="arrow"><i class='bx bx-chevron-right'></i></span></button>
+        <button class="yt-menu-button">YouTube Premium</button>
+        <button class="yt-menu-button">YouTube Music</button>
+        <button class="yt-menu-button">YouTube Kids</button>
+        <button class="yt-menu-button">YouTube TV</button>
+        <hr>
+        <button class="yt-menu-button">Settings</button>
+        <button class="yt-menu-button">Report history</button>
+        <button class="yt-menu-button">Help</button>
+        <button class="yt-menu-button">Send feedback</button>
+    </aside>
+<aside>
+    <div class="category-bar">
+        <button>All</button>
+        <button>Game</button>
+        <button>Music</button>
+        <button>Mix</button>
+        <button>Comedy</button>
+        <button>News</button>
+        <button>Live</button>
+        <button>Recently</button>
+        <button>Watched</button>
+        <button>New</button>
+    </div>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="video-thumb">
+                    <div class="thumb-img">
+                        <div class="timestamp">17:03</div>
+                    </div>
+                    <div class="desc-vid">
+                        <div class="channel-pic">
+                            <div class="vid-desc">
+                                <h3 class="title">affan</h3>
+                                <div class="desc">
+                                    <p>FANREALISM</p>
+                                    <p>123 watched <i class="big">·</i> 5 days Ago</p>
+                                </div>
+                            </div>
+                            <button class="more"><i class='bx bx-dots-vertical-rounded'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </aside>
+        <main class="main">
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9-poYwCZxDQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+            <div class="video-details">
+                <h2 class="video-title">Unboxing + tes fitur baru iPhone 17 & iPhone 17 Pro!</h2>
+                <div class="channel-info-bar">
+                <div class="channel-info">
+                    <img src="unnamed.jpg" alt="Channel Avatar" class="channel-avatar">
+                    <div class="channel-details">
+                        <h3 class="channel-name">GadgetIn</h3>
+                        <span class="subscribers">13.6M subscribers</span>
+                    </div>
+                    <div class="parent-subs">
+                        <div class="subs">
+                    <a href="#"><i class='bx bxs-bell-ring'></i>All</a>
+                    <a href="#"><i class='bx bxs-bell' ></i>Personalized</a>
+                    <a href="#"><i class='bx bxs-bell-off' ></i>None</a>
+                    <a href="#"><i class='bx bx-bell-off' ></i>Unsubscribe</a>
+                </div>
+                    <button class="subscribe-button">Subscribe</button>
+                </div>
+                <div class="action-button">
+                    <div class="button">
+                    <div class="like">
+                    <button class="like-button" onclick="like(this)"><i class='bx bx-like'></i> <span class="qnty">1.2K</span></button><span class="separator">|</span>
+                    <button class="dislike-button" onclick="like(this)"><i class='bx bx-dislike'></i> </button>
+                    </div>
+                    <button class="share-button" ><i class='bx bx-share'></i>Share</button>
+                    <div class="profile-container">
+                <button class="profile-buttonq">
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                </button>
+                <div class="dropdown-menuq">
+                    <a href="#"><i class='bx bx-movie-play'></i>Upload Video</a>
+                    <a href="#"><i class='bx bx-station'></i>Go live</a>
+                    <a href="#"><i class='bx bx-edit'></i>Create post</a>
+                </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <br>
+                <div class="video-description">
+                <p>
+                    <h4>1.4K Views  17 may 2021</h4>
+                    Mending... <br> <br>
+
+Link pembelian aksesoris iPhone: <br>
+Momax Travel Adaptor:  <br>
+https://bit.ly/4mvJCoa <br>
+https://bit.ly/4nH5YnC <br>
+<br>
+Momax 1-Power: <br>
+http://bit.ly/46ByUq7 <br>
+https://bit.ly/46Jwas9 <br>
+<br>
+Momax Mag.Link: <br>
+https://bit.ly/4nBy180 <br>
+https://bit.ly/4nMByk5 <br>
+<br>
+
+Kode voucher: MOMAXGDT1 <br>
+Potongan Rp. 6.000 (Min. pembelian Rp. 125.000) <br>
+Kode voucher: MOMAXGDT2 <br>
+Potongan Rp. 20.000 (Min. pembelian Rp. 775.000) <br>
+<br>
+Casing Spigen: <br>
+https://bit.ly/4motMvH <br>
+<br>
+Wallet: <br>
+https://bit.ly/3IsDYVZ <br>
+<br>
+Tas Selempang: <br>
+https://bit.ly/4nLwNHx <br>
+<br>
+Kode voucher: SPIGENXGDGT1 <br>
+Potongan Rp. 15.000 (Min. pembelian Rp. 300.000) <br>
+Kode voucher: SPIGENXGDGT2 <br>
+Potongan Rp. 30.000 (Min. pembelian Rp. 650.000) <br>
+<br>
+00:00 iPhone 17 SERIES! +pajak <br>
+01:15 Unboxing iPhone 17 <br>
+03:00 IJO MAHAL <br>
+06:10 Saya suka Sage <br>
+07:05 Aksesoris cakep buat iPhone 17 <br>
+09:35 Akhirnya ya, 120Hz & iOS 26!!! <br>
+12:45 Gini doang HEPI <br>
+14:10 vs iPhone 16 <br>
+15:10 Bezel lebih TIPIS <br>
+15:35 Kamera selfie yang bagus? <br>
+17:30 Material + sampel foto <br>
+18:40 iPhone 17 PRO! <br>
+19:40 Orangenya agak... <br>
+21:50 Desain Tom & Jerry <br>
+24:30 Casing yang bikin salah paham <br>
+26:20 Kamera versus iPhone 16 Pro <br>
+ <br>
+Tempat saya dapetin iPhone nya: https://www.tokopedia.com/studioponsel <br>
+<br>
+Barang bekas review biasanya saya jual disini: https://invol.co/cl75vrb
+<br> <br>
+Beberapa toko HP yang oke (kejual puluhan ribu unit + rating tinggi): <br>
+https://tokopedia.link/AKIOook8Qvb <br>
+https://tokopedia.link/anYzx6q8Qvb <br>
+https://tokopedia.link/iD40kiC8Qvb <br>
+https://tokopedia.link/DP7QokS8Qvb <br>
+https://tokopedia.link/pMWv2tU8Qvb <br>
+ <br>
+Instagram GadgetIn:   / gadgetins <br>   
+Twitter GadgetIn:   / dgadgetin   <br>
+Facebook GadgetIn:   / dgadgetin  <br>
+<br>
+Email untuk kerjasama: davidbrendi88@gmail.com <br>
+                </p>
+                </div>
+</div>
+
+            <!-- Repeat other video thumbs similarly -->
+        </main>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
